@@ -1,15 +1,15 @@
 
 <script type="text/javascript">
     RED.nodes.registerType('xxxxxxx',{
-        category: 'function',
-        color: '#0000ff',
+        category: 'znakzorro',
+        color: '#336699',
         defaults: {
             name: {value:"xxxxxxx"},
             interval: {value:"30"},			
 			bariera: {value:"50"}
         },
         inputs:1,
-        outputs:2,
+        outputs:4,
         icon: "bridge.png",
         label: function() {
             return this.name||"xxxxxxx";
@@ -19,7 +19,7 @@
 
 <script type="text/x-red" data-template-name="xxxxxxx">
     <div class="form-row">
-        <label for="node-input-name"><i class="icon-tag"></i> BLE ID</label>
+        <label for="node-input-name"><i class="icon-tag"></i>Name</label>
         <input type="text" id="node-input-name" placeholder="Mac ID">
     </div>    
 	<div class="form-row">
@@ -30,15 +30,20 @@
    <div class="form-row">
         <label for="node-input-bariera"><i class="fa fa-search"></i> <span data-i18n="twitter.label.search">Bariera</span></label>
         <select type="text" id="node-input-bariera" style="display: inline-block; vertical-align: middle; width:60%;">
-            <option value="30">30%</option>
-            <option value="40">40%</option>
-            <option value="50">50%</option>
-            <option value="60">60%</option>
-            <option value="70">70%</option>
+		<option value="0" > 0%</option>
+		<option value="10">10%</option>
+		<option value="20">20%</option>
+		<option value="30">30%</option>
+		<option value="40">40%</option>
+		<option value="50">50%</option>
+		<option value="60">60%</option>
+		<option value="70">70%</option>
+		<option value="80">80%</option>
+		<option value="90">90%</option>
+		<option value="99">99%</option>
         </select>
     </div>
 	
-
 </script>
 
 <script type="text/x-red" data-help-name="xxxxxxx">
