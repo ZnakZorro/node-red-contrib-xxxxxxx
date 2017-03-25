@@ -3,19 +3,13 @@
 <pre>
 <a href="https://raw.githubusercontent.com/ZnakZorro/node-red-contrib-xxxxxxx/master/proto-red.js">https://raw.githubusercontent.com/ZnakZorro/node-red-contrib-xxxxxxx/master/proto-red.js</a>
 </pre>
-<code>
-wget https://raw.githubusercontent.com/ZnakZorro/node-red-contrib-xxxxxxx/master/proto-red.js
-</code>
-<code>
-node proto-red.js mynewmodule
-</code>
-<code>
-sudo cp proto-red.js /bin/red-prototype.js
-<br />
-sudo chmod +x /bin/red-prototype.js
-<br />
+<pre>wget https://raw.githubusercontent.com/ZnakZorro/node-red-contrib-xxxxxxx/master/proto-red.js</pre>
+<pre>node proto-red.js mynewmodule</pre>
+<pre>
+sudo cp proto-red.js /bin/red-prototype.js<br />
+sudo chmod +x /bin/red-prototype.js<br />
 red-prototype.js
-</code>
+</pre>
 
 <hr />
 
