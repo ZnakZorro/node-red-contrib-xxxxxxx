@@ -1,8 +1,8 @@
 #!/usr/local/bin/node
 "use strict";
 const fs       = require("fs");
-const path      = require('path');
-const request = require('/usr/lib/node_modules/request');
+const path     = require('path');
+const request  = require('/usr/lib/node_modules/request');
 const DS ="/";
 
 let redname = __dirname.split('-').pop();
@@ -12,23 +12,13 @@ console.log(args);
 if (args != undefined) redname = args;
 
 let reddir = 'node-red-contrib-'+redname;
-//console.log(redname,reddir);
 
-
-if (!fs.existsSync(reddir)){
-    fs.mkdirSync(reddir);
-}
-/*
-if (!path.existsSync(reddir)) {
-    fs.mkdirSync(reddir, '0744');
-}
-*/
+if (!fs.existsSync(reddir)){fs.mkdirSync(reddir);}
 
 function prepareContent(content,redname){
 	let out = content.replace(/xxxxxxx/g,redname);
 	return out;
 }
-
 
 let proto =[
 'https://raw.githubusercontent.com/ZnakZorro/node-red-contrib-xxxxxxx/master/README.md',
