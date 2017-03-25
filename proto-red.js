@@ -2,7 +2,7 @@
 "use strict";
 const fs       = require("fs");
 const path     = require('path');
-const request  = require('/usr/lib/node_modules/request');
+const request  = require('/usr/local/lib/node_modules/request');
 const DS ="/";
 
 let redname = __dirname.split('-').pop();
