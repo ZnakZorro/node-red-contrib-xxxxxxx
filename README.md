@@ -1,6 +1,25 @@
 # node-red-contrib-xxxxxxx
-Node-red for start buldind another node-red modules
-<h2>Node-red for start</h2>
+<h3>Node app for buldind another node-red modules</h3>
+<pre>
+<a href="https://raw.githubusercontent.com/ZnakZorro/node-red-contrib-xxxxxxx/master/proto-red.js">https://raw.githubusercontent.com/ZnakZorro/node-red-contrib-xxxxxxx/master/proto-red.js</a>
+</pre>
+<code>
+wget https://raw.githubusercontent.com/ZnakZorro/node-red-contrib-xxxxxxx/master/proto-red.js
+</code>
+<code>
+node proto-red.js mynewmodule
+</code>
+<code>
+sudo cp proto-red.js /bin/red-prototype.js
+<br />
+sudo chmod +x /bin/red-prototype.js
+<br />
+red-prototype.js
+</code>
+
+<hr />
+
+<h2>Node-red for start building own module</h2>
 
 <pre>
 cd ~/.node-red
